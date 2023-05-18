@@ -1,5 +1,6 @@
 /**
  * This function returns a random choice from an array of choices.
+ * 
  * @returns {string} - A random choice of "rock", "paper", or "scissors"
  */
 function getComputerChoice() {
@@ -35,6 +36,16 @@ function getUserChoice() {
 
     return validChoices[userChoice];
 }
+
+/**
+ * The game function runs the rock-paper-scissors game for 5 rounds. 
+ * In each round, the function prompts the user for their choice and randomly selects a choice for the computer.
+ * The function then compares the choices and updates the score based on the outcome of the round. 
+ * If the user chooses to cancel the game by pressing 'cancel' during the prompt, the game ends immediately.
+ * After all rounds are over, or the user cancels the game, the function prints out the final scores and announces the winner or a draw.
+ * 
+ * @returns {void} - This function does not return anything.
+ */
 
 function game() {
 
